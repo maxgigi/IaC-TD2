@@ -1,0 +1,21 @@
+# Secrets et accès Kubernetes
+ansible/kubeconfig
+
+# État Terraform
+terraform/terraform.tfstate
+terraform/terraform.tfstate.*
+terraform/.terraform/
+
+# Variables Terraform potentiellement sensibles
+terraform/terraform.tfvars
+terraform/*.auto.tfvars
+
+# Clés privées et secrets
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# Fichiers système
+.DS_Store
