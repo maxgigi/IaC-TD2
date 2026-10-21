@@ -1,21 +1,22 @@
-# Secrets et accès Kubernetes
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+.terraform.lock.hcl.bak
+
+# Kubernetes / Ansible
 ansible/kubeconfig
+*.retry
 
-# État Terraform
-terraform/terraform.tfstate
-terraform/terraform.tfstate.*
-terraform/.terraform/
-
-# Variables Terraform potentiellement sensibles
-terraform/terraform.tfvars
-terraform/*.auto.tfvars
-
-# Clés privées et secrets
+# Clés et secrets
 *.pem
 *.key
 .env
-.env.*
-!.env.example
 
-# Fichiers système
+# OS / éditeurs
 .DS_Store
+.vscode/
+.idea/
